@@ -1,4 +1,7 @@
 # load-info-telegram
+
+![alt tag](https://github.com/unixhostpro/load-info-telegram/blob/master/loadinfotel.png)
+
 Скрипт уведомлений о нагрузки на сервер. При определенном пороге нагрузки вы будет получать уведомления с полной информацией о всех процессах. 
 
 Скачиваем скрипт в папку /usb/bin
