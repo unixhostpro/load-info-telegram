@@ -14,6 +14,8 @@ nano /usb/bin/load-info-telegram.sh
 
 mem_threshold - процент занятой памяти при которой будет высылаться уведомление 
 
+load_threshold - значение нагрузки, выше которого, будет высылаться уведомление
+
 Управление работой скрипта
 
 systemctl start tload.service
