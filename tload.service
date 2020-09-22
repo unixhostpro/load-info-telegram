@@ -1,0 +1,11 @@
+[Unit]
+Description=Telegram Load notification
+After=network.target
+
+[Service]
+ExecStart=/bin/bash '/usr/bin/load-info-telegram.sh'
+Type=simple
+TimeoutStartSec=0
+
+[Install]
+WantedBy=multi-user.target
