@@ -21,3 +21,16 @@ load_threshold - значение нагрузки, выше которого, �
 systemctl start tload.service
 
 systemctl stop tload.service
+
+
+[Наш сайт UnixHost](https://unixhost.pro/)
+
+[Блог UnixHost](https://blog.unixhost.pro/)
+
+[Telegram](https://t.me/unixhostpro)
+
+[Twitter](https://twitter.com/UnixHostPro)
+
+[Facebook](https://www.facebook.com/unixhost.pro)
+
+[Вконтакте](https://vk.com/unixhost)
