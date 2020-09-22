@@ -2,8 +2,8 @@
 #This script monitors server load and memory usage for every 10 seconds and sends notification to telegram in case of high usage.
 
 #Include telegram chat id and bot token ID here
-chat_id="225280091"
-token="1368717528:AAE88KNir5b1wRZYV87pTMwEjc6biTsVcPE"
+chat_id=""
+token=""
 host=$HOSTNAME
 ip=($(hostname -I))
 #Temporary files to store data
@@ -26,7 +26,7 @@ do
     min_load=$(cat /proc/loadavg | cut -d . -f1)
     if [ $min_load -ge $load_threshold ]
         then
-        echo -e "⚠️High CPU usage detected⚠️\n🖥  $(htname)\n🌎$ip\n⏱$(uptime)\n#CPU" > $msg_caption
+        echo -e "⚠️High CPU usage detected⚠️\n🖥$(hostname)\n🌎$ip\n⏱$(uptime)\n#CPU" > $msg_caption
         echo -e "CPU usage report from $(hostname)\nServer Time : $(date +"%d%b%Y %T")\n\n\$uptime\n$(uptime)\n\n%CPU %MEM USER\tCMD" >         $resource_usage_info
         ps -eo pcpu,pmem,user,cmd | sed '1d' | sort -nr >> $resource_usage_info
         caption=$(<$msg_caption)
