@@ -8,7 +8,8 @@ Cкачиваем файл который будет запускать скри
 > wget -P /etc/systemd/system https://raw.githubusercontent.com/unixhostpro/load-info-telegram/master/tload.service
 
 Редактируем скрипт и вставляем в него свой token и chatid 
-nano /usb/bin/load-info-telegram.sh
+
+> nano /usb/bin/load-info-telegram.sh
 
 В скрипте устанавливаем порог уведомлений
 
