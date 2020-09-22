@@ -11,8 +11,11 @@ wget -P /etc/systemd/system https://raw.githubusercontent.com/unixhostpro/load-i
 nano /usb/bin/load-info-telegram.sh
 
 В скрипте устанавливаем порог уведомлений
+
 mem_threshold - процент занятой памяти при которой будет высылаться уведомление 
 
 Управление работой скрипта
+
 systemctl start tload.service
+
 systemctl stop tload.service
