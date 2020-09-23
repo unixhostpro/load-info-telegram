@@ -26,6 +26,20 @@ load_threshold - значение нагрузки, выше которого, �
 
 > systemctl stop tload.service
 
+Для проверки скрипта установим пакет для стресс-тестирования системы stress-ng 
+
+>apt install stress-ng
+
+Выполним команду для нагрузки CPU 
+
+>stress-ng --class cpu --sequential 8 --timeout 600s --metrics-brief
+
+Выполним команду для нагрузки RAM
+
+>stress-ng --class memory --sequential 8 --timeout 600s --metrics-brief
+
+
+
 
 [Наш сайт UnixHost](https://unixhost.pro/)
 
