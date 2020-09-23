@@ -30,13 +30,9 @@ load_threshold - значение нагрузки, выше которого, �
 
 >apt install stress-ng
 
-Выполним команду для нагрузки CPU 
+Выполним команду для нагрузки CPU и RAM
 
->stress-ng --class cpu --sequential 8 --timeout 600s --metrics-brief
-
-Выполним команду для нагрузки RAM
-
->stress-ng --class memory --sequential 8 --timeout 600s --metrics-brief
+>stress-ng --cpu 8 --io 2 --vm 1 --vm-bytes 5G --timeout 600s --metrics-brief
 
 
 
