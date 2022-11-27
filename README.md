@@ -47,4 +47,3 @@ load_threshold - значение нагрузки, выше которого, �
 
 [Facebook](https://www.facebook.com/unixhost.pro)
 
-[Вконтакте](https://vk.com/unixhost)
